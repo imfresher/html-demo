@@ -1,0 +1,184 @@
+/**
+ * Override: Bootstrap
+ */
+.btn,
+.btn-primary,
+.btn-secondary,
+.btn-success,
+.btn-danger,
+.btn-warning,
+.btn-info {
+    i {
+        vertical-align: text-top;
+    }
+
+    .btn-check:focus + &,
+    &:focus {
+        outline: 0;
+        box-shadow: none;
+    }
+
+    .btn-check:checked + &,
+    .btn-check:active + &,
+    &:active,
+    &.active {
+        box-shadow: none;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+}
+
+.btn-primary,
+.btn-success,
+.btn-danger,
+.btn-warning,
+.btn-info {
+    color: $white;
+
+    &:focus,
+    &:hover {
+        color: $white;
+    }
+}
+
+.btn-primary,
+.btn-primary:focus,
+.btn-primary:hover {
+    border-color: darken($primary, 5%);
+}
+
+.btn-secondary,
+.btn-secondary:focus,
+.btn-secondary:hover {
+    border-color: darken($secondary, 5%);
+}
+
+.btn-success,
+.btn-success:focus,
+.btn-success:hover {
+    border-color: darken($success, 5%);
+}
+
+.btn-danger,
+.btn-danger:focus,
+.btn-danger:hover {
+    border-color: darken($danger, 5%);
+}
+
+.btn-warning,
+.btn-warning:focus,
+.btn-warning:hover {
+    border-color: darken($warning, 5%);
+}
+
+.btn-info,
+.btn-info:focus,
+.btn-info:hover {
+    border-color: darken($info, 5%);
+}
+
+.btn-secondary,
+.btn-outline-secondary {
+    color: $body-color;
+}
+
+.btn-check:checked + .btn-outline-danger,
+.btn-check:active + .btn-outline-danger,
+.btn-outline-danger:active,
+.btn-outline-danger.active,
+.btn-outline-danger.dropdown-toggle.show,
+.btn-outline-primary:hover,
+.btn-outline-success:hover,
+.btn-outline-danger:hover,
+.btn-outline-warning:hover,
+.btn-outline-info:hover {
+    color: $white;
+}
+.alert {
+    display: flex;
+}
+
+.alert-icon {
+    padding: .95rem;
+    background: none;
+    font-size: 1.5rem;
+    line-height: 1;
+
+    .la,
+    .las,
+    .lar,
+    .lal,
+    .lad,
+    .lab {
+        font-size: 1.5rem;
+    }
+}
+
+.alert-message {
+    line-height: 1.8;
+    padding: .95rem .95rem .95rem 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.alert-dismissible {
+    .close {
+        font-size: 1.2rem;
+        padding: 0.95rem;
+        opacity: 0.5;
+        border: 0;
+        background: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.badge {
+    &.bg-green-1000 {
+        background-color: $green-1000;
+    }
+
+    &.bg-gray-300 {
+        background-color: $gray-300;
+    }
+}
+
+a {
+    &.badge {
+        &:hover {
+            color: white;
+        }
+
+        &.bg-success {
+            &:hover {
+                background-color: lighten($success, 10) !important;
+            }
+        }
+
+        &.bg-info {
+            &:hover {
+                background-color: lighten($info, 10) !important;
+            }
+        }
+
+        &.bg-warning {
+            &:hover {
+                background-color: lighten($warning, 10) !important;
+            }
+        }
+
+        &.bg-danger {
+            &:hover {
+                background-color: lighten($danger, 10) !important;
+            }
+        }
+    }
+}

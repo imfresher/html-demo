@@ -1,0 +1,88 @@
+// $font-family-sans-serif:    system-ui, -apple-system, "Open Sans", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-sans-serif:    Inter,-apple-system,BlinkMacSystemFont,San Francisco,Segoe UI,Roboto,Helvetica Neue,sans-serif;
+$font-size-base:            0.9rem;
+$h1-font-size:              $font-size-base * 2;
+$h2-font-size:              $font-size-base * 1.8;
+$h3-font-size:              $font-size-base * 1.55;
+$h4-font-size:              $font-size-base * 1.3;
+$h5-font-size:              $font-size-base * 1.15;
+$h6-font-size:              $font-size-base;
+$font-weight-base:          300;
+
+$body-bg:                   #fafbfc; //#f7fafc #f0f1f5 #f7f9fc #f5f5fa #f7fafc
+$body-color:                #1e293b; //#626976 #3a3a3a
+$primary:                   #5eb0f1; // #10952a, #206bc4, #80affb, #3f80ea, #8ab4f8, #80affb
+$secondary:                 #e5e5e5; // #f1eeee
+$tertiary:                  #93d7f8;
+$success:                   #8bc34a; // #4caf50, #5dd061, #8bc34a
+$info:                      #5eb0f1; // #2196f3, #5eb0f1
+$warning:                   #ffb240; // #ff9800, #ffb240
+$danger:                    #f76a5f; // #f44336, #f76a5f
+$light:                     #ecf2f8;
+
+$gray-100:                  #f5f6f7;
+$gray-200:                  #fafbfc;
+$gray-300:                  #b6b6b6; // #b6b6b6, #e2e8f0
+$gray-400:                  #d9dbde;
+$gray-500:                  #c5ced4;
+
+$green-1000:                $success;
+
+$white:                     #fff;
+$black:                     #000;
+$blue:                      $primary;
+$green:                     $success;
+$cyan:                      $info;
+$yellow:                    $warning;
+$red:                       $danger;
+
+$input-btn-focus-width:     0;
+$link-decoration:           none;
+
+$border-width:              1px;
+$border-radius:             .2rem;
+$border-color:              #f2f3f4;
+
+// $alert-padding-y:           0;
+// $alert-padding-x:           0;
+$alert-border-width:        $border-width;
+$alert-bg-scale:            -90%;
+$alert-border-scale:        -80%;
+$alert-color-scale:         40%;
+
+// Form
+$input-bg:                  $white;
+$input-btn-focus-width:     0;
+$input-btn-padding-y:       .375rem;
+$input-btn-padding-x:       .95rem;
+$input-placeholder-color:   $gray-300;
+$form-label-font-weight:    500;
+$form-text-color:           inherit;
+$form-label-font-size:      .875rem;
+$form-label-font-weight:    500;
+
+// Table
+$table-striped-bg:          #f5f5f5;
+
+// Badge
+$badge-border-radius:       0.2rem;
+
+// Card
+$card-border-color:         rgba(98, 105, 118, .16);
+$card-spacer-y:             1rem;
+$card-spacer-x:             1.25rem;
+$card-cap-padding-y:        1rem;
+$card-cap-padding-x:        1.25rem;
+$card-cap-bg:               #fafbfc;
+
+// Sidebar
+$sidebar-color:             #e2e3e5;
+$sidebar-color-hover:       $white;
+$sidebar-primary-bg:        #353c44;
+$sidebar-secondary-bg:      #2c3038;
+$sidebar-tertiary-bg:       #3c444c;
+
+$sidebar-width:             220px;
+$sidebar-width-reverse:     -220px;
+
+$header-height:             56px;

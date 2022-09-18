@@ -1,0 +1,40 @@
+@layout('layouts/backend')
+@set('title', 'Dashboard page')
+
+@section('content')
+    <div class="content-inner home-index-page">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="components">
+                    @include('backend/_components/colors')
+                    @include('backend/_components/button')
+                    @include('backend/_components/accordion')
+                    @include('backend/_components/alert')
+                    @include('backend/_components/badge')
+                    @include('backend/_components/card')
+                    {{-- @include('backend/_components/slider') --}}
+                    @include('backend/_components/toast')
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Dashboard</h3>
+                    </div>
+                    <div class="panel-body">
+                        <a href="#" class="btn btn-success btn-sm create-form"><i class="ion-plus-round"></i> Create btn</a>
+                        <div class="table-responsive">
+                            <table id="table-index" class="table table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th style="display:none">ID</th>
+                                        <th>One</th>
+                                        <th>Two</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+@end

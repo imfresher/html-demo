@@ -1,0 +1,44 @@
+button,
+input,
+optgroup,
+select,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.require {
+    color: $danger;
+}
+
+.form-check-input {
+    width: 1rem;
+    height: 1rem;
+    margin-top: 0.2142857143rem;
+    vertical-align: top;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1rem;
+    border: 1px solid rgba(98,105,118,.24);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+
+    &:checked {
+        // background-color: #206bc4;
+        border-color: rgba(98,105,118,.24);
+    }
+
+    &:checked[type=checkbox] {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='16' height='16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 8.5l2.5 2.5l5.5 -5.5'/%3e%3c/svg%3e");
+    }
+}
+
+.form-check-input[type=checkbox] {
+    border-radius: 4px;
+}

@@ -1,0 +1,66 @@
+<aside class="app__sidebar">
+    <button class="toggle_sidebar__btn open--left">
+        <i class="bi bi-chevron-compact-right"></i>
+    </button>
+
+    <a href="#" class="app__logo text-center">
+        <span class="logo-lg">Admin Site <i class="bi bi-box-arrow-up-right"></i></span>
+    </a>
+
+    <div class="app__nav">
+        <div class="app__nav__wrapper">
+            <ul class="side__nav">
+                <li class="nav__item">
+                    <a href="/backend/home/index.html" class="nav__link">
+                        <i class="bi bi-house"></i>
+                        <span class="nav__text">Dashboard</span>
+                    </a>
+                </li>
+
+                <li class="nav__item active">
+                    <a data-bs-toggle="collapse" href="#sidebarUsers" aria-expanded="true" aria-controls="sidebarUsers" class="nav__link">
+                        <i class="bi bi-person-lines-fill"></i>
+                        <span class="nav__text">Users</span>
+                        <span class="menu__arrow"></span>
+                    </a>
+                    <div class="collapse show" id="sidebarUsers">
+                        <ul class="nav__sub">
+                            <li class="nav__item">
+                                <a href="/backend/users/index.html" class="nav__link">
+                                    <span class="nav__text">List users</span>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="/backend/users/create.html" class="nav__link">
+                                    <span class="nav__text">Create new user</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#" class="nav__link">
+                        <i class="bi bi-tag-fill"></i>
+                        <span class="nav__text">Post</span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#" class="nav__link">
+                        <i class="bi bi-bell"></i>
+                        <span class="badge bg-success float-end">4</span>
+                        <span class="nav__text">Contact</span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="apps-chat.html" class="nav__link">
+                        <i class="bi bi-gear-fill"></i>
+                        <span class="nav__text">Configs</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</aside>

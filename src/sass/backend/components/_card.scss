@@ -1,0 +1,9 @@
+.card {
+    box-shadow: rgb(30 41 59 / 4%) 0 2px 4px 0;
+    transition: transform .3s ease-out,opacity .3s ease-out,box-shadow .3s ease-out;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,74 @@
+.app__header {
+    padding: 0 24px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 35px 0 rgb(154 161 171 / 15%);
+    box-shadow: 0 0 35px 0 rgb(154 161 171 / 15%);
+    min-height: $header-height;
+
+    .topbar__menu {
+        > li {
+            float: left;
+            max-height: $header-height;
+        }
+
+        .nav__link {
+            padding: 0;
+            color: #98a6ad;
+            min-width: 32px;
+            text-align: center;
+            margin: 0 10px;
+            position: relative;
+            justify-items: center;
+            align-items: center;
+            display: flex;
+        }
+
+        .dropdown-toggle {
+            &:after {
+                margin-left: 0.6em;
+            }
+        }
+    }
+
+    .topbar__dropdown {
+        > .nav__link {
+            line-height: $header-height;
+        }
+    }
+}
+
+.nav__user {
+    padding: calc(28px * .5) 20px calc(28px * .5) 30px!important;
+    text-align: left!important;
+    position: relative;
+    border-width: 0 1px;
+    height: 60px;
+
+    .account__user__avatar {
+        margin-right: 8px;
+
+        img {
+            height: 38px;
+            width: 38px;
+        }
+    }
+
+    .account__user__name {
+        display: block;
+        font-weight: 600;
+    }
+
+    .account__position {
+        display: block;
+        font-size: 12px;
+        margin-top: -3px;
+    }
+}
+
+.mobile__menu__btn {
+    background: none;
+    border: 0;
+    font-size: 1.8rem;
+    line-height: $header-height;
+    padding: 0 10px;
+}

@@ -1,0 +1,43 @@
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import '../../../node_modules/bootstrap/scss/functions';
+
+// 2. Include any default variable overrides here
+@import 'variables';
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import '../../../node_modules/bootstrap/scss/variables';
+
+// 4. Include any default map overrides here
+// - Add to map:
+// $custom-colors: (
+//   "custom-color": #900
+// );
+// $theme-colors: map-merge($theme-colors, $custom-colors);
+
+// - Remove map:
+// $theme-colors: map-remove($theme-colors, "info", "light", "dark");
+
+// 5. Include remainder of required parts
+@import '../../../node_modules/bootstrap/scss/bootstrap';
+
+// Vendors
+@import '../../../node_modules/bootstrap-icons/font/bootstrap-icons';
+@import '../../../node_modules/datatables.net-bs5/css/dataTables.bootstrap5.css';
+@import '../../../node_modules/daterangepicker/daterangepicker.css';
+@import '../../../node_modules/sweetalert2/src/sweetalert2';
+@import '../../../node_modules/noty/src/noty';
+@import '../../../node_modules/simplebar/dist/simplebar.css';
+
+// Override
+@import 'override-bootstrap';
+
+// Theme
+@import 'components/index';
+@import 'common';
+@import 'theme';
+@import 'sidebar';
+@import 'content';
+@import 'header';
+@import 'footer';
+@import 'responsive';
+

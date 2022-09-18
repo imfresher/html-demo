@@ -1,0 +1,122 @@
+tbody, td, tfoot, th, thead, tr {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: inherit;
+    vertical-align: top;
+    border-color: rgba(98,105,118,.16);
+
+    > thead {
+        vertical-align: bottom;
+    }
+
+    thead {
+        th {
+            background: $border-color;
+        }
+    }
+}
+
+.card-table {
+    tr {
+        td,
+        th {
+            &:first-child {
+                padding-left: 1.25rem;
+            }
+        }
+    }
+}
+
+.pagination {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    .page-link {
+        padding: 0.25rem;
+        min-width: 1.75rem;
+        border-radius: $border-radius;
+        color: $body-color;
+        background-color: transparent;
+        border: 0 solid #cbd5e1;
+
+        &:not(:first-child) {
+            .page-link {
+                margin-left: 0;
+            }
+        }
+    }
+
+    .page-item {
+        text-align: center;
+
+        &.next,
+        &.previous {
+            .page-link {
+                padding: 0.25rem 1rem
+            }
+        }
+
+        &.disabled {
+            .page-link {
+                color: rgba(98,105,118,.5);
+                pointer-events: none;
+                background-color: transparent;
+                border-color: #cbd5e1;
+            }
+        }
+    }
+}
+
+div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+    padding: 0.4em 0;
+}
+
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_desc:before,
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_desc_disabled:before,
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:after {
+    display: inline-block;
+    font-family: "bootstrap-icons" !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: -0.125em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_desc:before,
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_desc_disabled:before {
+    top: auto;
+    bottom: 16px;
+    right: 0.5em;
+    content: "\F286" !important;
+}
+
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:after {
+    right: 0.5em;
+    content: "\F282" !important;
+}
